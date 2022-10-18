@@ -50,12 +50,12 @@ class Index{
         if(count($params)==1 && $params[0]==""){
             if($AMEN->is_mobile_request()){
                 //读取header
-                $header = file_get_contents(__views__.'/index/MOBILE/header.html');
-                //导航栏
-                $navigationBar = file_get_contents(__views__.'/index/MOBILE/navigationBar.html');
-                //尾部
-                $top = file_get_contents(__views__.'/index/MOBILE/top.html');
-                $request->render(__webSite__.'views/index/MOBILE/index.html',['header'=>$header,'navigationBar'=>$navigationBar,'top'=>$top]);
+//                $header = file_get_contents(__views__.'/index/MOBILE/header.html');
+//                //导航栏
+//                $navigationBar = file_get_contents(__views__.'/index/MOBILE/navigationBar.html');
+//                //尾部
+//                $top = file_get_contents(__views__.'/index/MOBILE/top.html');
+                $request->render(__webSite__.'views/index/MOBILE/index.html');
             }else{
                 //读取header
                 $header = file_get_contents(__views__.'/index/PC/header.html');
