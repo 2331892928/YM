@@ -20,6 +20,11 @@ function viewDevelopers (id) {
 }
 !(function($) {
   "use strict";
+  //页面加载完成。执行最后一步
+  //卸载进入动画和字和css
+  $("#etext").css("z-index","0");
+  //完毕
+
   $("#Query").click(function (){
     layer.prompt({title: '成员查询,请输入您要查询的QQ号'},function(value, index, elem){
       const query = layer.load(1, {time: 10 * 1000});

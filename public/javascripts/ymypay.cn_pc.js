@@ -33,6 +33,9 @@ window.onload=function()
 		// }
 		$("#content").animate({height:'80%'},800)
 	}
+	// let divTyping = document.getElementById('etext');
+	// divTyping.innerHTML = "加载中，请稍后";
+	$("#ebga").animate({width:'100%',height:'100%'},800);
 	typing();
 	
 	setTimeout(function(){$("#xuna").show();},1000);
