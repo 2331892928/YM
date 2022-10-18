@@ -1,0 +1,59 @@
+<!--/*
+ * @作者：AMEN
+ * @官网：https://www.ymypay.cn/
+ * @博客：https://blog.ymypay.cn/
+ * 湮灭网络工作室
+ */-->
+<!-- 第四页 - 项目展示 -->
+<!--原第五，换位置-->
+
+<div id="nav05">
+    <!-- 第四页-头部图片动态 -->
+    <div class="nav05_top">
+        <div class="nav05_topbgkj">
+            <div class="nav05_top_bg"></div>
+            <div class="nav05_top_tx01"></div>
+            <div class="nav05_top_tx02"></div>
+        </div>
+        <div class="nav05_top_fj"><img src="{{__images__}}nav05_fj.png" alt="△"></div>
+    </div>
+    <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>项目展示</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">所有</li>
+                        <li data-filter=".filter-web">网页</li>
+                        <li data-filter=".filter-app">程序</li>
+<!--                        这里做开发者名检索-->
+                    </ul>
+                </div>
+            </div>
+<!--            app和网页区别就是 filter-web filter-app <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute;">中改一下就行-->
+<!--            同理，只需要在里边新建比如amen，再data-filter=".amen" 就可以检索-->
+<!--            可以中文，用作搜索-->
+            <div class="row portfolio-container" style="position: relative;">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute;">
+                    <div class="portfolio-wrap">
+                        <img src="https://s1.ax1x.com/2020/11/04/BcGqiV.png" class="img-fluid" alt="background">
+                        <div class="portfolio-info">
+                            <h4>BeiYuEP分销          </h4>
+                            <p>
+                                BeiYuEP分销是一家节点全自营的EP分销 为您提供优质节点，控制面板无任何广告！所有节点均为高品质节点！          </p>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="https://s1.ax1x.com/2020/11/04/BcGqiV.png" data-gall="portfolioGallery" class="venobox vbox-item" title="查看大图" one-link-mark="yes"><i class='bx bx-fullscreen'></i></a>
+                            &nbsp;&nbsp;
+                            <a title="查看开发者" onclick="viewDevelopers(1);"><i class='bx bx-search'></i></a>
+                            &nbsp;&nbsp;
+                            <a href="project.php?id=2" title="More Details" one-link-mark="yes"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
