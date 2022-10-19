@@ -85,9 +85,12 @@ class Index{
                 $res['ip'] = $request->ipV2(2);
                 $request->render(__webSite__.'views/index/PC/index.html',$res);
             }
+        }else if($params[0]=="sitemap.xml" or $params[0]=="robots.txt"){
+//            $path = implode("/",$params);
+//            $request->render(__webSite__.'views/index/'.$path);
+            $request->render(__webSite__.$params[0]);
         }else{
-            $path = implode("/",$params);
-            $request->render(__webSite__.'views/index/'.$path);
+            $request->send("你来到了页面未完成区域");
         }
 
 
